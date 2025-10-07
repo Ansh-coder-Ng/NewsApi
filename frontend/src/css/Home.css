@@ -1,0 +1,12 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    gap:10px;
+}
+
+.grid-container>*{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1)
+}
