@@ -1,14 +1,13 @@
 import React from "react";
 import '../css/NewsCard.css'
-function NewsCard(data)
+function NewsCard(prop)
 {
-    console.log(data)
     return(
         <div className="grid-content">
-            <span className="title">Title-{data.data.title}</span>
-            <span className="description">Description-{data.data.description}</span>
+            <img src={prop.data.urlToImage}></img>
+            <span className="title">Title-{prop.data.title}</span>
+            <span className="description">Description-{prop.data.description}</span>
         </div>
     )
 }
-
 export default NewsCard;
